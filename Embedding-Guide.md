@@ -32,7 +32,7 @@ To customize the look of the embedded DartPad, you can add
 ```
 
 Specify the width and the height as style parameters of the iframe:
-    
+
 ```
 <iframe style="width:400px;height:400px;" src="https://dartpad.dev/embed-inline.html?id=5d70bc1889d055c7a18d35d77874af88&split=80&theme=dark"></iframe>
 ```
@@ -105,7 +105,8 @@ DartPad looks for the following parameters in its query string:
 be used by the console or Flutter/HTML output).
 - **theme**: Set this to 'dark' to use the dark theme (seen in the first
 screenshot above).
-- **run**: Set this to 'true' to auto-run the sample when DartPad starts up.
+- **null_safety**: Set this to true to enable null safety mode.
+- **run**: Set this to 'true' to auto-run the sample once loaded.
 - **id**: ID of a GitHub gist to load into the editor
 - **sample_id**: ID of an API doc sample to load into the editor (see https://api.flutter.dev/snippets/index.json for a list)
 - **sample_channel**: If this parameter is set to "master", DartPad will load API Doc samples from the master doc server (master-api.flutter.dev). Any other values (or no value) will cause DartPad to load from the stable doc server (api.flutter.dev).
@@ -264,6 +265,10 @@ Auto run:
 - `run-true`
 - `run-false` (default)
 
+Null safety:
+- `null_safety-true`
+- `null_safety-false` (default)
+
 Split:
 - `split-70`
 
@@ -299,7 +304,7 @@ To give a meaningful name to snippets, you can assign a `ga_id` parameter:
 <iframe src="embed-flutter.html?theme=dark&run=false&split=false&ga_id=example1"></iframe>
 ```
 
-Alternatively, using the inject script will send a virtual pageview with this query paramter to GA:
+Alternatively, using the inject script will send a virtual pageview with this query parameter to GA:
 
 ```
     <pre>
