@@ -32,48 +32,10 @@ steps:
     has_solution: false
 ```
 
-
 The `solution.dart` file is optional. If the step doesn't have a `solution.dart`
 file, the `has_solution` parameter must be set to `false`.
 
-
-# Hosting
-
-Codelabs can be hosted on GitHub or using a web server. It is recommended to use
-the web server option for in-person events.
-
-
-## GitHub
-
-
-> **Warning: Rate limiting:** Codelab files are fetched using the GitHub API,
-which is rate limited. Running with more than 1-2 users in the same location
-will quickly hit these limits. If you are running an in-person workshop, use the
-web server hosting option instead.
-
-
-**Hosting**
-
-Commit and push the files to a GitHub repository (subdirectories are allowed.)
-
-**Viewing**
-
-Create a URL starting with `dartpad.dev/workshops.html` with the following query
-parameters:
-
-* **gh_owner**: The name of the GitHub user or organization
-* **gh_repo:** The name of the GitHub repository
-* **(optional) gh_ref**: The branch or commit to load from  (defaults to 'main')
-* **(optional) gh_path**: The relative path to the directory containing
-  `meta.yaml` (defaults to the root of the repository)
-
-**Example:**
-
-```
-http://dartpad.dev/workshops.html?gh_owner=flutter&gh_repo=codelabs&gh_ref=main&gh_path=dartpad_codelabs/src/example_flutter
-```
-
-## Web server
+## Hosting using a web server (Firebase Hosting)
 
 **Hosting**
 
@@ -94,6 +56,34 @@ For files hosted at `https://my-firebase-app.web.app/path/to/my_workshop`
 
 ```
 http://localhost:8000/workshops.html?webserver=https://my-firebase-app.web.app/path/to/my_workshop
+```
+
+## Hosting on GitHub
+
+> **Warning: Rate limiting:** Codelab files are fetched using the GitHub API,
+which is rate limited. Running with more than 1-2 users in the same location
+will quickly hit these limits. If you are running an in-person workshop, use the
+web server hosting option instead.
+
+**Hosting**
+
+Commit and push the files to a GitHub repository (subdirectories are allowed.)
+
+**Viewing**
+
+Create a URL starting with `dartpad.dev/workshops.html` with the following query
+parameters:
+
+* **gh_owner**: The name of the GitHub user or organization
+* **gh_repo:** The name of the GitHub repository
+* **(optional) gh_ref**: The branch or commit to load from  (defaults to 'main')
+* **(optional) gh_path**: The relative path to the directory containing
+  `meta.yaml` (defaults to the root of the repository)
+
+**Example:**
+
+```
+http://dartpad.dev/workshops.html?gh_owner=flutter&gh_repo=codelabs&gh_ref=main&gh_path=dartpad_codelabs/src/example_flutter
 ```
 
 ## Displaying images
