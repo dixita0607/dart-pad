@@ -46,7 +46,7 @@ the web server option for in-person events.
 ## GitHub
 
 
-> **Warning**: rate limiting Codelab files are fetched using the GitHub API,
+> **Warning: Rate limiting:** Codelab files are fetched using the GitHub API,
 which is rate limited. Running with more than 1-2 users in the same location
 will quickly hit these limits. If you are running an in-person workshop, use the
 web server hosting option instead.
