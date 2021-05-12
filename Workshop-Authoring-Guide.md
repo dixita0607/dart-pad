@@ -1,9 +1,11 @@
 DartPad can load and display step-by-step instructional content. [See an example
 here][flutter-example].
 
-# File format
+# Setup 
+## Directory structure
 
-A workshop contains a `meta.yaml` file and a directory for each step:
+Create a new directory containing a `meta.yaml` file and a directory for each
+step:
 
 ```
 my_workshop/
@@ -11,14 +13,19 @@ my_workshop/
     step_01/
             instructions.md
             snippet.dart
-            solution.dart
+            solution.dart # optional
     step_02/
             instructions.md
             snippet.dart
-            solution.dart
+            solution.dart # optional
 ```
 
-The `meta.yaml` file should be configured
+Each step directory must contain an `instructions.md` file and a `snippet.dart`
+files. The `solution.dart` file is optional.
+
+## Metadata file format 
+
+`meta.yaml` has the following structure:
 
 ```yaml
 name: Example workshop
@@ -32,33 +39,32 @@ steps:
     has_solution: false
 ```
 
-The `solution.dart` file is optional. If the step doesn't have a `solution.dart`
-file, the `has_solution` parameter must be set to `false`.
+Set the `has_solution` parameter to true if the step has a `solution.dart` file.
 
-## Hosting using a web server (Firebase Hosting)
+# Hosting 
+## Hosting using a web server
 
 **Hosting**
 
 1. Host the files using a web hosting provider such as [Firebase
    Hosting](https://firebase.google.com/docs/hosting), Cloud Storage, or S3.
 2. Configure your server's
-   [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) headers to
-   allow requests from `dartpad.dev`.
+   [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) headers
+   to allow requests from `dartpad.dev`.
 
-**Viewing**
+# Opening
 
-Create a URL starting with  `dartpad.dev/workshops.html` with a  `webserver`
-query parameter containing the URL where the files are hosted.
-
-**Example**
-
-For files hosted at `https://my-firebase-app.web.app/path/to/my_workshop`
+## Opening from a web server
+Create a URL starting with  `dartpad.dev/workshops.html?webserver=` followed by
+the URL where the files are hosted. For example, if the workshop files are
+hosted at `https://my-firebase-app.web.app/path/to/my_workshop`, then the URL
+is:
 
 ```
-http://localhost:8000/workshops.html?webserver=https://my-firebase-app.web.app/path/to/my_workshop
+http://dartpad.dev/workshops.html?webserver=https://my-firebase-app.web.app/path/to/my_workshop
 ```
 
-## Hosting on GitHub
+## Opening from GitHub
 
 > **Warning: Rate limiting:** Codelab files are fetched using the GitHub API,
 which is rate limited. Running with more than 1-2 users in the same location
@@ -86,10 +92,15 @@ parameters:
 http://dartpad.dev/workshops.html?gh_owner=flutter&gh_repo=codelabs&gh_ref=main&gh_path=dartpad_codelabs/src/example_flutter
 ```
 
+# FAQ
+
 ## Displaying images
 
-We recommend hosting images alongside the workshop files. First, create an
-`images` directory with the images you would like to display:
+Relative paths are not supported for images. We recommend hosting your images
+alongside the workshop files.
+
+For example, create an `images` directory with the images you would like to
+display:
 
 ```
 my_workshop/
@@ -100,10 +111,17 @@ my_workshop/
     meta.yaml
 ```
 
-Then use a `NetworkImage` widget with the URL that will host the workshop:
+Then use a `NetworkImage` widget with the full URL where workshop files are
+hosted:
 
 ```
-Image.network('https://my-firebase-app.web.app/example_dart/images/dash.png')
+Image.network('https://my-workshop.web.app/example_dart/images/dash.png')
+```
+
+Or use Markdown to display an image in the instructions
+
+```
+![alt text](https://my-workshop.app/example_dart/images/dash.png)
 ```
 
 [flutter-example]: https://dartpad.dev/workshops.html?webserver=https://dartpad-codelabs-experimental1.web.app/example_flutter
