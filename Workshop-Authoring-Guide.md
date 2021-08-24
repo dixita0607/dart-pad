@@ -1,5 +1,4 @@
-DartPad can load and display step-by-step instructional content. [See an example
-here][flutter-example].
+DartPad can load and display step-by-step instructional content. To get started right away, [clone this starter project](https://github.com/johnpryan/dartpad_workshop_starter) and follow the README.
 
 # Setup 
 ## Directory structure
