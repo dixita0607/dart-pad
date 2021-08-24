@@ -1,4 +1,4 @@
-DartPad can load and display step-by-step instructional content. To get started right away, [clone this starter project](https://github.com/johnpryan/dartpad_workshop_starter) and follow the README.
+DartPad can load and display step-by-step instructional content. To get started right away, [clone this starter project](https://github.com/johnpryan/dartpad_workshop_starter) and follow the README. See [Getting started with Slivers](https://dartpad.dev/workshops.html?webserver=https://dartpad-workshops-io2021.web.app/getting_started_with_slivers) to see a running example.
 
 # Setup 
 ## Directory structure
