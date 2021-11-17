@@ -15,7 +15,7 @@ Here is the process in a nutshell:
 * Anyone who would like DartPad to support a new package should check to see if [an issue](https://github.com/dart-lang/dart-pad/issues?q=is%3Aissue+label%3Asuggested-package+) for that package already exists.
   - If it does, upvote it with a "thumb's up" reaction.
   - If it doesn't, create a new issue with the name of the package and a brief description of why it would be good to support.
-* Once every quarter, the team will take a look at the existing package list and all the issues, and then:
+* Once every quarter or so, the team will take a look at the existing package list and all the issues, and then:
   - Remove support for any packages that are no longer needed/maintained.
   - Look at suggestions with a significant number of upvotes, and either:
     - Add support, or
