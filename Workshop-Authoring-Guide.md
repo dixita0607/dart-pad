@@ -85,16 +85,25 @@ http://dartpad.dev/workshops.html?webserver=https://my-firebase-app.web.app/path
 
 ## Opening from GitHub
 
+### Hosting
+
+Commit and push the files to a GitHub repository (subdirectories are allowed.)
+
+### Viewing with Web Server
+
+Github serves repository contents with acceptable CORS headers from `raw.githubusercontent.com`. Therefore, you can view your workshop by pointing to the correct username, repository, and path for your workshop. Example:
+
+
+```
+https://dartpad.dev/workshops.html?webserver=https://raw.githubusercontent.com/flutter/codelabs/master/dartpad_codelabs/src/example_dart
+```
+
+### Viewing with API
+
 > **Warning: Rate limiting:** Codelab files are fetched using the GitHub API,
 which is rate limited. Running with more than 1-2 users in the same location
 will quickly hit these limits. If you are running an in-person workshop, use the
 web server hosting option instead.
-
-**Hosting**
-
-Commit and push the files to a GitHub repository (subdirectories are allowed.)
-
-**Viewing**
 
 Create a URL starting with `dartpad.dev/workshops.html` with the following query
 parameters:
