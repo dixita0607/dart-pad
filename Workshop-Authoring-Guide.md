@@ -41,12 +41,20 @@ steps:
 Set the `has_solution` parameter to true if the step has a `solution.dart` file.
 
 # Hosting 
-## Hosting using a web server
 
-**Hosting**
+## Local server
+
+While writing workshops, host the files with a local web server that can enable CORS and disable caching, such as [http-server](https://www.npmjs.com/package/http-server).
+
+```
+npx http-server ~/path/to/workshop --cors -c-1
+```
+
+## Hosting Provider
 
 1. Host the files using a web hosting provider such as [Firebase
-   Hosting](https://firebase.google.com/docs/hosting), Cloud Storage, or S3.
+   Hosting](https://firebase.google.com/docs/hosting), [Github Pages](https://pages.github.com), 
+   Cloud Storage, or S3.
 2. Configure your server's
    [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) headers
    to allow requests from `dartpad.dev`.
@@ -55,7 +63,19 @@ Set the `has_solution` parameter to true if the step has a `solution.dart` file.
 
 ## Opening from a web server
 Create a URL starting with  `dartpad.dev/workshops.html?webserver=` followed by
-the URL where the files are hosted. For example, if the workshop files are
+the URL where the files are hosted.
+
+### Local server
+
+Point dartpad.dev to your local web server with the correct port. Example:
+
+```
+https://dartpad.dev/workshops.html?webserver=http://localhost:8080/
+```
+
+### Hosting Provider
+
+For example, if the workshop files are
 hosted at `https://my-firebase-app.web.app/path/to/my_workshop`, then the URL
 is:
 
