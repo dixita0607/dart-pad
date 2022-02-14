@@ -38,7 +38,6 @@ Here is the process in a nutshell:
 * `http`
 * `intl`
 * `js`
-* `lints`
 * `meta`
 * `pedantic`
 * `provider`
