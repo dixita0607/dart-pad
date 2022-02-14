@@ -1,3 +1,5 @@
+## How package support works
+
 DartPad allows users to import a few different kinds of code libraries:
 
 * Dart SDK libraries like `dart:convert`
@@ -8,7 +10,9 @@ It does this by analyzing and compiling each user's code inside a stubbed-out pr
 
 This approach keeps things simple and reliable (and is what made it possible for the DartPad team to implement package support at all), but it also introduces some restrictions. For example, each supported package/version needs to work nicely with the others. If two packages require conflicting versions of the same dependency, for instance, it's a blocker. In addition, because DartPad is a very unique execution environment that neither Flutter nor most packages were truly designed for, each package must be manually tested in order to guarantee that it works.
 
-This is all a fancy way to say that adding support for new packages requires a lot of work, and in some cases simply won't be possible. The `google_mobile_ads` plugin, for example, is destined never to appear in DartPad. However, updating the allowed list of packages with new libraries and occasionally removing an old one is definitely part of the plan going forward.
+## Adding support for new packages
+
+Adding support for new packages requires a lot of work, and in some cases simply won't be possible. The `google_mobile_ads` plugin, for example, is destined never to appear in DartPad. However, updating the allowed list of packages with new libraries and occasionally removing an old one is definitely part of the plan going forward.
 
 Here is the process in a nutshell:
 
@@ -20,6 +24,27 @@ Here is the process in a nutshell:
   - Look at suggestions with a significant number of upvotes, and either:
     - Add support, or
     - (if support isn't possible) close the issue and explain why.
+
+## Currently supported packages:
+
+* `bloc`
+* `characters`
+* `collection`
+* `flutter_bloc`
+* `flutter_hooks`
+* `flutter_riverpod`
+* `google_fonts`
+* `hooks_riverpod`
+* `http`
+* `intl`
+* `js`
+* `lints`
+* `meta`
+* `pedantic`
+* `provider`
+* `riverpod`
+* `url_launcher`
+* `vector_math`
 
 
 
