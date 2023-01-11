@@ -1,5 +1,7 @@
 ## The DartPad UI release process
 
+_Last updated: 1/11/2022_
+
 - We follow a normal pull request, review, merge to master github workflow.
 - New changes get batched up in master. Our CI bot runs on each PR; we maintain the master branch in an always-shipping state.
 - When we're ready to release, we merge all of master into the `prod` branch (`git checkout prod`; `git merge master`). We only release production version from this branch.
