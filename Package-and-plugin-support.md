@@ -27,9 +27,21 @@ Here is the process in a nutshell:
 
 ## Currently supported packages:
 
+* `animations`
+* `basics`
 * `bloc`
 * `characters`
 * `collection`
+* `cross_file`
+* `dartz`
+* `english_words`
+* `equatable`
+* `fast_immutable_collections`
+* `flame`
+* `flame_fire_atlas`
+* `flame_forge2d`
+* `flame_splash_screen`
+* `flame_tiled`
 * `flutter_bloc`
 * `flutter_hooks`
 * `flutter_riverpod`
@@ -39,11 +51,16 @@ Here is the process in a nutshell:
 * `intl`
 * `js`
 * `meta`
-* `pedantic`
+* `path`
+* `petitparser`
 * `provider`
+* `quiver`
 * `riverpod`
-* `url_launcher`
+* `rohd`
+* `rohd_vf`
+* `rxdart`
+* `timezone`
 * `vector_math`
-
-
-
+* `video_player`
+* `yaml`
+* `yaml_edit`
