@@ -64,3 +64,9 @@ Here is the process in a nutshell:
 * `video_player`
 * `yaml`
 * `yaml_edit`
+
+## Deprecated packages
+
+The following packages are deprecated for use and set for removal in a future release of DartPad. Please remove all imports and usages of the following packages.
+
+* `tuple`
