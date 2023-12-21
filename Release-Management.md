@@ -1,4 +1,4 @@
-## The DartPad UI release process
+## The DartPad release process
 
 _Last updated: 1/11/2022_
 
