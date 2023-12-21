@@ -2,6 +2,6 @@
 
 _Last updated: 1/11/2022_
 
-- We follow a normal pull request, review, merge to master github workflow.
+- We follow a normal pull request, review, merge to `main` GitHub workflow.
 - DartPad follows a continuous automated release from the `main` branch using Cloud Build.
 
