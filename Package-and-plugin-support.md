@@ -49,7 +49,6 @@ Here is the process in a nutshell:
 * `hooks_riverpod`
 * `http`
 * `intl`
-* `js`
 * `meta`
 * `path`
 * `petitparser`
@@ -70,3 +69,6 @@ Here is the process in a nutshell:
 The following packages are deprecated for use and set for removal in a future release of DartPad. Please remove all imports and usages of the following packages.
 
 * `tuple`
+* `js`
+* `flutter_processing`
+* `riverpod_navigator`
