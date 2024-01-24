@@ -1,0 +1,15 @@
+DartPad uses GitHub [gists](https://gist.github.com/) to publicly share your creations.
+
+DartPad looks for a file named `main.dart` within your gist.
+
+To share your code with others:
+
+1. Create a gist with a `main.dart` file.
+2. Direct DartPad to the gist ID, without any username specified. For example, to view [gist.github.com/5c0e154dd50af4a9ac856908061291bc](https://gist.github.com/5c0e154dd50af4a9ac856908061291bc) in DartPad, use the URL [dartpad.dev/?id=5c0e154dd50af4a9ac856908061291bc](https://dartpad.dev/?id=5c0e154dd50af4a9ac856908061291bc).
+
+Some example gists:
+
+- [gist.github.com/4a68e553746602d851ab3da6aeafc3dd](https://gist.github.com/4a68e553746602d851ab3da6aeafc3dd)
+- [gist.github.com/a1d5666d6b54a45eb170b897895cf757](https://gist.github.com/a1d5666d6b54a45eb170b897895cf757)
+
+Happy sharing!
