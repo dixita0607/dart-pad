@@ -25,7 +25,7 @@ Here is the process in a nutshell:
     - Add support, or
     - (if support isn't possible) close the issue and explain why.
 
-## Currently supported packages:
+## Currently supported packages
 
 * `animations`
 * `basics`
@@ -72,3 +72,20 @@ The following packages are deprecated for use and set for removal in a future re
 * `js`
 * `flutter_processing`
 * `riverpod_navigator`
+
+### Deprecated Firebase packages
+
+Support for all Firebase packages in DartPad is deprecated and set to be removed. To prepare for this removal, please remove any imports and usages of them in DartPad snippets.
+
+If you'd like to learn more about using Firebase in your Flutter apps,
+check out [Discover Firebase for Flutter](https://firebase.google.com/docs/flutter)!
+
+This deprecation and removal includes the following packages:
+
+- `firebase_core`
+- `cloud_firestore`
+- `firebase_auth`
+- `firebase_analytics`
+- `firebase_database`
+- `firebase_messaging`
+- `firebase_storage`
