@@ -1,5 +1,7 @@
 DartPad uses GitHub [gists](https://gist.github.com/) to publicly share your creations.
 
+## Share with a gist
+
 DartPad looks for a file named `main.dart` within your gist.
 
 To share your code with others:
@@ -13,3 +15,7 @@ Some example gists:
 - [gist.github.com/a1d5666d6b54a45eb170b897895cf757](https://gist.github.com/a1d5666d6b54a45eb170b897895cf757)
 
 Happy sharing!
+
+### Share within DartPad
+
+DartPad previously supported sharing and updating Gists directly within the DartPad UI. This is no longer supported. To provide feedback on or support for a potential replacement, check out https://github.com/dart-lang/dart-pad/issues/2733.
