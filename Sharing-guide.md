@@ -14,6 +14,15 @@ Some example gists:
 - [gist.github.com/4a68e553746602d851ab3da6aeafc3dd](https://gist.github.com/4a68e553746602d851ab3da6aeafc3dd)
 - [gist.github.com/a1d5666d6b54a45eb170b897895cf757](https://gist.github.com/a1d5666d6b54a45eb170b897895cf757)
 
+Query parameters
+- `id` - the Gist ID to load
+- sample - alias for `id`
+- sample_id - alias for `id`
+- channel - the Flutter SDK channel to use (`stable`, `beta`, or `main`)
+- embed - whether to use the embedded layout (`true` or `false`)
+- run - whether to run the snippet automatically (`true` or `false`)
+
+
 Happy sharing!
 
 ### Share within DartPad
